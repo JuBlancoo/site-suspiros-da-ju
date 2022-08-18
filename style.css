@@ -1,0 +1,274 @@
+body{ 
+	font-family: 'Font Sans Pro', sans-serif;
+}
+header {
+	background: #FFFFFF;
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 800px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 100px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+
+}
+
+ nav a:hover {
+ 	color: #C78C19;
+ 	text-decoration: underline;
+ }
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+
+.produtos li {
+	   display: inline-block;
+	   text-align: center;
+	   width: 30%;
+	   vertical-align: top;
+	   margin: 0 1.5%;
+	   padding: 30px 20px;
+	   box-sizing: border-box;
+	   border: 6px dotted #00838f;
+	   border-radius: 10px 10px 10px 10px;
+
+}
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+
+
+.produtos li:active {
+	border-color: #088C18;
+}
+
+.produtos li:hover h2 {
+	font-size: 30px;
+}
+
+}
+
+.produtos h2 {
+	font-size: 32px;
+	font-weight: bold;
+	}
+
+.produto-descricao {
+	font-size: 16px;
+}
+
+.produto-preco {
+	font-size: 17px;
+	font-weight: bold;
+
+}
+
+footer {
+	text-align: center;
+    background: url(img/fundoo.png);
+    main-height: 100vh;
+   flex-direction: column;
+
+}
+
+.copyright {
+   font-size: 10px;
+}
+ 
+
+form {
+	margin: 40 20px;
+
+}
+
+form label, form p {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+
+}
+
+.input-padrao {
+   display: block;
+   margin: 0 0 20px;
+   padding: 10px 25px;
+   width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: #F7BFD8;
+	color: white;
+	font-weight: bold;
+   font-size: 18px;
+   border: none;
+   border-radius: 5px;
+   transition: 1s all;
+   cursor: pointer;
+}
+
+.enviar:hover {
+	background: #FBD5E5;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #FBD5E5;
+	font-weight: bold;
+}
+
+td, th{
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+/* css da pagina inicial */
+.suspiros {
+	width: 70%;
+   display: block;
+   margin: 0px auto;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;	
+
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto; 	
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.conteudo-opçoes {
+   width: 640px;
+   margin: 0 auto;
+   display: table;
+}
+
+
+
+.opçoes {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+.lista-opçoes {
+	width: 700px;
+	display: table-cell;
+	vertical-align: top;
+	margin-top: -20px;
+	margin-left: 20px;
+	
+}
+
+.itens {
+	line-height: 2.5;
+}
+
+.itens:nth-child(3n) {
+   font-weight: bold;
+
+}
+
+.itens {
+	list-style:none;
+}
+
+.itens:before {
+	content: "★";
+}
+
+
+.bolo {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.principal em {
+	font-size: italic;
+}
+
+
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #FBD5E5, #FEFEFE);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+.site {
+	flex-grow: 1;
+}
+
+
+
+@media screen and (max-width: 480px) {
+   .caixa, .principal, .conteudo-opçoes, .mapa, .carrosel {
+   	width: auto;
+   }
+
+  h1 {
+  	 text-align: center;
+  }
+
+   nav {
+   	position: static;
+   }
+
+.lista-opçoes, .pratinhosuspiro {
+	width: 100%;
+}
+
+}
